@@ -1,24 +1,16 @@
 ﻿<Properties StartupConfiguration="{51303080-22E5-AB27-AB1A-8D5BF0E3E593}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyShooter/Scripts/GenerateTerrain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyShooter/Scripts/PlayerMovement.cs">
     <Files>
-      <File FileName="Assets/MyShooter/Scripts/GenerateTerrain.cs" Line="12" Column="25" />
+      <File FileName="Assets/MyShooter/Scripts/GenerateTerrain.cs" Line="23" Column="35" />
       <File FileName="Assets/MyShooter/Scripts/GenerateInfinite.cs" Line="25" Column="1" />
       <File FileName="Assets/MyShooter/Scripts/MouseLook.cs" Line="13" Column="50" />
-      <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" Line="9" Column="31" />
+      <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" Line="37" Column="10" />
       <File FileName="Assets/MyShooter/Scripts/TreePool.cs" Line="14" Column="9" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="MyShooterExample" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="MyShooter" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="GenerateTerrain.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="MyShooterExample" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
