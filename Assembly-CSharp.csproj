@@ -140,11 +140,13 @@
     <Compile Include="Assets\FPS\Scripts\WeaponController.cs" />
     <Compile Include="Assets\FPS\Scripts\WeaponFuelCellHandler.cs" />
     <Compile Include="Assets\FPS\Scripts\WeaponPickup.cs" />
+    <Compile Include="Assets\MyShooter\Scripts\AttackAnim.cs" />
     <Compile Include="Assets\MyShooter\Scripts\GenerateInfinite.cs" />
     <Compile Include="Assets\MyShooter\Scripts\GenerateTerrain.cs" />
     <Compile Include="Assets\MyShooter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\MyShooter\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\MyShooter\Scripts\TreePool.cs" />
+    <Compile Include="Assets\MyShooter\Scripts\ZombieAI.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne_License.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

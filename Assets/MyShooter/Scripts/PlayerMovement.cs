@@ -16,12 +16,33 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
+        //Attack();
+        Move();
+    }
+
+    void Attack()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.Play("Axe_Anim");
+        }
+    }
+
+    void Move()
+    {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if(isGrounded && velocity.y < 3)
+        if (isGrounded && velocity.y < 3)
         {
             velocity.y = -2f;
         }
@@ -33,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
 
-        if(Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }

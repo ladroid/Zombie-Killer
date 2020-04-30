@@ -6,7 +6,8 @@ public class GenerateTerrain : MonoBehaviour
 {
     int heightScale = 5;
     float detailScale = 5.0f;
-    public GameObject tree;
+    //public GameObject tree;
+    List<GameObject> myTrees = new List<GameObject>();
 
 
     //TODO: DELETE TREES
@@ -20,18 +21,38 @@ public class GenerateTerrain : MonoBehaviour
             vertices[i].y = Mathf.PerlinNoise((vertices[i].x + transform.position.x) / detailScale,
                                               (vertices[i].z + transform.position.z) / detailScale) * heightScale;
 
-            if(vertices[i].y > 3.4)
+            if(vertices[i].y > 2.6 && Mathf.PerlinNoise((vertices[i].x + 5) / 10, (vertices[i].z+5)/10)*10 > 4.6)
             {
-                Vector3 treePos = new Vector3(vertices[i].x + this.transform.position.x, vertices[i].y,
+                GameObject newTree = TreePool.getTree();
+                if(newTree != null)
+                {
+                    Vector3 treePos = new Vector3(vertices[i].x + this.transform.position.x, vertices[i].y,
                                               vertices[i].z + this.transform.position.z);
+                    newTree.transform.position = treePos;
+                    newTree.SetActive(true);
+                    myTrees.Add(newTree);
+                }
+                
 
-                Instantiate(tree, treePos, Quaternion.identity);
+                //Instantiate(tree, treePos, Quaternion.identity);
             }
 		}
         mesh.vertices = vertices;
         mesh.RecalculateBounds();
         mesh.RecalculateNormals();
         this.gameObject.AddComponent<MeshCollider>();
+    }
+
+    private void OnDestroy()
+    {
+        for(int i = 0; i < myTrees.Count; i++)
+        {
+            if (myTrees[i] != null)
+            {
+                myTrees[i].SetActive(false);
+            }
+        }
+        myTrees.Clear();
     }
 
     // Update is called once per frame

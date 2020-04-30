@@ -1,11 +1,13 @@
 ﻿<Properties StartupConfiguration="{51303080-22E5-AB27-AB1A-8D5BF0E3E593}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyShooter/Scripts/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyShooter/Scripts/ZombieAI.cs">
     <Files>
-      <File FileName="Assets/MyShooter/Scripts/GenerateTerrain.cs" Line="23" Column="35" />
-      <File FileName="Assets/MyShooter/Scripts/GenerateInfinite.cs" Line="25" Column="1" />
-      <File FileName="Assets/MyShooter/Scripts/MouseLook.cs" Line="13" Column="50" />
-      <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" Line="37" Column="10" />
-      <File FileName="Assets/MyShooter/Scripts/TreePool.cs" Line="14" Column="9" />
+      <File FileName="Assets/MyShooter/Scripts/GenerateTerrain.cs" Line="55" Column="25" />
+      <File FileName="Assets/MyShooter/Scripts/GenerateInfinite.cs" Line="24" Column="23" />
+      <File FileName="Assets/MyShooter/Scripts/MouseLook.cs" />
+      <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" Line="29" Column="11" />
+      <File FileName="Assets/MyShooter/Scripts/TreePool.cs" Line="7" Column="31" />
+      <File FileName="Assets/MyShooter/Scripts/AttackAnim.cs" Line="19" Column="38" />
+      <File FileName="Assets/MyShooter/Scripts/ZombieAI.cs" Line="31" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +19,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f507a271-b52a-447b-a5ae-98dfd24c44c0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e883b478-30c6-4811-8e5e-e5c766e66b9f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
