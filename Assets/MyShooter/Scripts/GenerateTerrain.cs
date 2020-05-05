@@ -9,8 +9,6 @@ public class GenerateTerrain : MonoBehaviour
     //public GameObject tree;
     List<GameObject> myTrees = new List<GameObject>();
 
-
-    //TODO: DELETE TREES
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +30,6 @@ public class GenerateTerrain : MonoBehaviour
                     newTree.SetActive(true);
                     myTrees.Add(newTree);
                 }
-                
 
                 //Instantiate(tree, treePos, Quaternion.identity);
             }
@@ -58,6 +55,6 @@ public class GenerateTerrain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }

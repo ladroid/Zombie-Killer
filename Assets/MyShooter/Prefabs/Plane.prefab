@@ -107,4 +107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a49575fa8fa44767b012fa4a8a79fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tree: {fileID: 151190, guid: a9cc5585b9634a9449920c03ec6bc243, type: 3}
+  zombie: {fileID: -927199367670048503, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
+  secondsBetweenSpawn: 2
+  elapsedTime: 0

@@ -26,4 +26,13 @@ public class AttackAnim : MonoBehaviour
             anim.SetBool("attack", false);
        }
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Zombie")
+        {
+            Debug.Log("kill");
+            Destroy(gameObject);
+        }
+    }
 }

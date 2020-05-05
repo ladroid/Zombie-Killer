@@ -43,7 +43,7 @@ public class ZombieAI : MonoBehaviour
         }
         else if(distance <= range && distance > stop)
         {
-            Debug.Log("find target!");
+            //Debug.Log("find target!");
             zombieAnim.SetBool("run", true);
             zombieAnim.SetBool("walk", false);
 
