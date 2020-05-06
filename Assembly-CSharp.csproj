@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Bullet Casing\Scripts\FP_Shooting.cs" />
+    <Compile Include="Assets\Bullet Casing\Scripts\Sound.cs" />
     <Compile Include="Assets\FPS\Scripts\Actor.cs" />
     <Compile Include="Assets\FPS\Scripts\ActorsManager.cs" />
     <Compile Include="Assets\FPS\Scripts\AudioManager.cs" />
@@ -145,6 +147,7 @@
     <Compile Include="Assets\MyShooter\Scripts\GenerateTerrain.cs" />
     <Compile Include="Assets\MyShooter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\MyShooter\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\MyShooter\Scripts\PlayerShoot.cs" />
     <Compile Include="Assets\MyShooter\Scripts\TreePool.cs" />
     <Compile Include="Assets\MyShooter\Scripts\ZombieAI.cs" />
     <Compile Include="Assets\MyShooter\Scripts\ZombieSpawning.cs" />

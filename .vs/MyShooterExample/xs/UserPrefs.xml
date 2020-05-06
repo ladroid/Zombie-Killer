@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{51303080-22E5-AB27-AB1A-8D5BF0E3E593}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyShooter/Scripts/GenerateTerrain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyShooter/Scripts/PlayerShoot.cs">
     <Files>
       <File FileName="Assets/MyShooter/Scripts/GenerateTerrain.cs" Line="11" Column="1" />
-      <File FileName="Assets/MyShooter/Scripts/ZombieSpawning.cs" Line="28" Column="35" />
-      <File FileName="Assets/MyShooter/Scripts/GenerateInfinite.cs" Line="1" Column="1" />
+      <File FileName="Assets/MyShooter/Scripts/ZombieSpawning.cs" />
+      <File FileName="Assets/MyShooter/Scripts/GenerateInfinite.cs" />
       <File FileName="Assets/MyShooter/Scripts/MouseLook.cs" />
       <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" />
       <File FileName="Assets/MyShooter/Scripts/TreePool.cs" />
       <File FileName="Assets/MyShooter/Scripts/AttackAnim.cs" />
-      <File FileName="Assets/MyShooter/Scripts/ZombieAI.cs" Line="46" Column="15" />
+      <File FileName="Assets/MyShooter/Scripts/ZombieAI.cs" Line="20" Column="28" />
+      <File FileName="Assets/MyShooter/Scripts/PlayerShoot.cs" Line="11" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +18,7 @@
             <Node name="Assets" expanded="True">
               <Node name="MyShooter" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="GenerateTerrain.cs" selected="True" />
+                  <Node name="PlayerShoot.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -28,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3774991e-cacc-4b8a-9ebb-f34b93c7f551" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f76180ab-3739-4864-80c1-f8c7c2f9bb25" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
