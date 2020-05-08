@@ -609,6 +609,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e417443a7b28847ef8ba4ada5de60ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon:
+    name: Glock
+    damage: 10
+    range: 200
+  cam: {fileID: 2250786039322903622}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1 &2125678054
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,3 +781,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90586e39201d4489eb627a3a74a8a704, type: 3}
+--- !u!20 &2250786039322903622 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2250786038964923701, guid: 90586e39201d4489eb627a3a74a8a704,
+    type: 3}
+  m_PrefabInstance: {fileID: 2250786039322903621}
+  m_PrefabAsset: {fileID: 0}

@@ -7,9 +7,10 @@
       <File FileName="Assets/MyShooter/Scripts/MouseLook.cs" />
       <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" />
       <File FileName="Assets/MyShooter/Scripts/TreePool.cs" />
-      <File FileName="Assets/MyShooter/Scripts/AttackAnim.cs" />
-      <File FileName="Assets/MyShooter/Scripts/ZombieAI.cs" Line="20" Column="28" />
-      <File FileName="Assets/MyShooter/Scripts/PlayerShoot.cs" Line="11" Column="6" />
+      <File FileName="Assets/MyShooter/Scripts/AttackAnim.cs" Line="17" Column="12" />
+      <File FileName="Assets/MyShooter/Scripts/ZombieAI.cs" />
+      <File FileName="Assets/MyShooter/Scripts/PlayerShoot.cs" Line="9" Column="1" />
+      <File FileName="Assets/MyShooter/Scripts/PlayerWeapon.cs" Line="8" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,7 +30,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f76180ab-3739-4864-80c1-f8c7c2f9bb25" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f7b6ea9c-74b4-41b7-bcc0-060bf538326d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

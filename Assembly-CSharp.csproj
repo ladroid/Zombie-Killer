@@ -148,6 +148,7 @@
     <Compile Include="Assets\MyShooter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\MyShooter\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\MyShooter\Scripts\PlayerShoot.cs" />
+    <Compile Include="Assets\MyShooter\Scripts\PlayerWeapon.cs" />
     <Compile Include="Assets\MyShooter\Scripts\TreePool.cs" />
     <Compile Include="Assets\MyShooter\Scripts\ZombieAI.cs" />
     <Compile Include="Assets\MyShooter\Scripts\ZombieSpawning.cs" />
