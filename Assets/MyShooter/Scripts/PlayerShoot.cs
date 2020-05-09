@@ -5,37 +5,32 @@ using UnityEngine.Networking;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public PlayerWeapon weapon;
-
-    [SerializeField]
-    private Camera cam;
-    public LayerMask mask;
-
+    public GameObject revolver;
+    public GameObject bulletPrefab;
+    public float speed = 1000f;
+    public float fireRate = 2f;
+    private float nextFire = 0.0f;
     // Start is called before the first frame update
     void Start()
     {
-        if (cam == null)
-        {
-            Debug.LogError("PlayerShoot: No camera referenced!");
-            this.enabled = false;
-        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Shoot();
-        }
+        Shoot();
     }
 
     void Shoot()
     {
-        RaycastHit hit;
-        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, weapon.range, mask))
+        if (Input.GetMouseButtonDown(0) && Time.time > nextFire)
         {
-            Debug.Log("Hit" + hit.collider.name);
+            nextFire = Time.time + fireRate;
+            GameObject instBullet = Instantiate(bulletPrefab, revolver.transform.position, revolver.transform.rotation);
+            instBullet.transform.Rotate(new Vector3(0, 90, 90));
+            instBullet.GetComponent<Rigidbody>().AddForce(revolver.transform.right * speed);
+            Debug.Log("Fire!");
         }
     }
 }

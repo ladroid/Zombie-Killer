@@ -295,6 +295,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 5488680538344562032, guid: b12227c752b72334b9c3d0f15986f1c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488680538344562032, guid: b12227c752b72334b9c3d0f15986f1c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488680538344562032, guid: b12227c752b72334b9c3d0f15986f1c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.96
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
 --- !u!1 &1362150370
@@ -361,6 +376,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b27fa0823d6a948e4a828adc48e2ece1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1539348903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7076896081927157199, guid: b12227c752b72334b9c3d0f15986f1c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1080801724}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1762010999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -609,14 +630,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e417443a7b28847ef8ba4ada5de60ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon:
-    name: Glock
-    damage: 10
-    range: 200
-  cam: {fileID: 2250786039322903622}
-  mask:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  revolver: {fileID: 1539348903}
+  bulletPrefab: {fileID: 1604340010224622, guid: 17a44cf2e19b14f45b11237f3c2b3bdc,
+    type: 3}
+  speed: 1000
+  lifeDuration: 2
+  fireRate: 2
 --- !u!1 &2125678054
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,9 +800,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90586e39201d4489eb627a3a74a8a704, type: 3}
---- !u!20 &2250786039322903622 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2250786038964923701, guid: 90586e39201d4489eb627a3a74a8a704,
-    type: 3}
-  m_PrefabInstance: {fileID: 2250786039322903621}
-  m_PrefabAsset: {fileID: 0}

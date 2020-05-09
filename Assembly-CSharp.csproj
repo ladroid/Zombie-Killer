@@ -143,12 +143,12 @@
     <Compile Include="Assets\FPS\Scripts\WeaponFuelCellHandler.cs" />
     <Compile Include="Assets\FPS\Scripts\WeaponPickup.cs" />
     <Compile Include="Assets\MyShooter\Scripts\AttackAnim.cs" />
+    <Compile Include="Assets\MyShooter\Scripts\Bullet.cs" />
     <Compile Include="Assets\MyShooter\Scripts\GenerateInfinite.cs" />
     <Compile Include="Assets\MyShooter\Scripts\GenerateTerrain.cs" />
     <Compile Include="Assets\MyShooter\Scripts\MouseLook.cs" />
     <Compile Include="Assets\MyShooter\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\MyShooter\Scripts\PlayerShoot.cs" />
-    <Compile Include="Assets\MyShooter\Scripts\PlayerWeapon.cs" />
     <Compile Include="Assets\MyShooter\Scripts\TreePool.cs" />
     <Compile Include="Assets\MyShooter\Scripts\ZombieAI.cs" />
     <Compile Include="Assets\MyShooter\Scripts\ZombieSpawning.cs" />
