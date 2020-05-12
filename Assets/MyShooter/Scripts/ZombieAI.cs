@@ -11,6 +11,7 @@ public class ZombieAI : MonoBehaviour
     float rotationSpeed = 3f;
     float range = 10f;
     float range2 = 10f;
+    float closestRange = 5f;
     float stop = 0;
 
     Animator zombieAnim;
@@ -37,6 +38,7 @@ public class ZombieAI : MonoBehaviour
             Debug.Log("looking...");
             zombieAnim.SetBool("run", false);
             zombieAnim.SetBool("walk", true);
+            zombieAnim.SetBool("attack", false);
 
             zombie.rotation = Quaternion.Slerp(zombie.rotation, Quaternion.LookRotation(target.position - zombie.position),
                                                rotationSpeed * Time.deltaTime);
@@ -45,19 +47,43 @@ public class ZombieAI : MonoBehaviour
         {
             //Debug.Log("find target!");
             zombieAnim.SetBool("run", true);
+            //zombieAnim.SetBool("attack", true);
             zombieAnim.SetBool("walk", false);
+            zombieAnim.SetBool("attack", false);
 
             zombie.rotation = Quaternion.Slerp(zombie.rotation, Quaternion.LookRotation(target.position - zombie.position),
                                                rotationSpeed * Time.deltaTime);
             zombie.position += zombie.forward * moveSpeed * Time.deltaTime;
+            
         }
+
+        //TODO:MAKE ATTACK
+        //else if (distance <= (range / 2))
+        //{
+        //    Debug.Log("attack!");
+        //    zombieAnim.SetBool("attack", true);
+        //    zombieAnim.SetBool("walk", false);
+        //    zombieAnim.SetBool("walk", false);
+
+        //}
+
         else if(distance <= stop)
         {
             Debug.Log("idle...");
             zombieAnim.SetBool("walk", true);
             zombieAnim.SetBool("run", false);
+            zombieAnim.SetBool("attack", false);
             zombie.rotation = Quaternion.Slerp(zombie.rotation, Quaternion.LookRotation(target.position - zombie.position),
                                                rotationSpeed * Time.deltaTime);
+        }
+        DestroyZombie();
+    }
+
+    void DestroyZombie()
+    {
+        if(zombie.position.y < 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 }

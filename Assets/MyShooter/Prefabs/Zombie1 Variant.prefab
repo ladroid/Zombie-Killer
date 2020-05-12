@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!136 &6578405978347598425
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957682226584481706}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.17912635
+  m_Height: 0.2731008
+  m_Direction: 1
+  m_Center: {x: -0.6252437, y: -0.040940583, z: 1.1071169}
+--- !u!136 &6997107881753533586
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9015050456907335868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.17912668
+  m_Height: 0.27310047
+  m_Direction: 1
+  m_Center: {x: 0.6252443, y: -0.040941074, z: 1.1071188}
 --- !u!1001 &966026786274066743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72,16 +100,38 @@ PrefabInstance:
       propertyPath: zombie
       value: 
       objectReference: {fileID: 391472793901571396}
+    - target: {fileID: 3926347646178430561, guid: 15da987e9a96e4e50aabb1693f4391ef,
+        type: 3}
+      propertyPath: onGround
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4493914613880827488, guid: 15da987e9a96e4e50aabb1693f4391ef,
         type: 3}
       propertyPath: m_Name
-      value: Zombie1
+      value: Zombie1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4493914613880827488, guid: 15da987e9a96e4e50aabb1693f4391ef,
+        type: 3}
+      propertyPath: m_TagString
+      value: Zombie
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15da987e9a96e4e50aabb1693f4391ef, type: 3}
 --- !u!4 &391472793901571396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 578376449398627443, guid: 15da987e9a96e4e50aabb1693f4391ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 966026786274066743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6957682226584481706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7919196358131396253, guid: 15da987e9a96e4e50aabb1693f4391ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 966026786274066743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9015050456907335868 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8103067124237306251, guid: 15da987e9a96e4e50aabb1693f4391ef,
     type: 3}
   m_PrefabInstance: {fileID: 966026786274066743}
   m_PrefabAsset: {fileID: 0}

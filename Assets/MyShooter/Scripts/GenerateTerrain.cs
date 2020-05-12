@@ -31,6 +31,17 @@ public class GenerateTerrain : MonoBehaviour
                     myTrees.Add(newTree);
                 }
 
+                //GameObject newZomb = ZombieSpawning.getZombie();
+                //if(newZomb != null)
+                //{
+
+                //    Vector3 zombPos = new Vector3(Random.Range(-(vertices[i].x + this.transform.position.x), vertices[i].x + this.transform.position.x), Random.Range(-vertices[i].y, vertices[i].y),
+                //                              Random.Range(-(vertices[i].z + this.transform.position.z), vertices[i].z + this.transform.position.z));
+                //    newZomb.transform.position = zombPos;
+                //    newZomb.SetActive(true);
+                //    zomb.Add(newZomb);
+                //}
+
                 //Instantiate(tree, treePos, Quaternion.identity);
             }
 		}
@@ -40,7 +51,7 @@ public class GenerateTerrain : MonoBehaviour
         this.gameObject.AddComponent<MeshCollider>();
     }
 
-    private void OnDestroy()
+    void OnDestroy()
     {
         for(int i = 0; i < myTrees.Count; i++)
         {
@@ -50,11 +61,20 @@ public class GenerateTerrain : MonoBehaviour
             }
         }
         myTrees.Clear();
+
+        //for(int i = 0; i < zomb.Count; i++)
+        //{
+        //    if(zomb[i] != null)
+        //    {
+        //        zomb[i].SetActive(false);
+        //    }
+        //}
+        //zomb.Clear();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        
     }
 }

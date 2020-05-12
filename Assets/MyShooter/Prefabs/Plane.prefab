@@ -107,6 +107,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a49575fa8fa44767b012fa4a8a79fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zombie: {fileID: -927199367670048503, guid: 8f7380da49034cd488ddff94b1ac35d1, type: 3}
-  secondsBetweenSpawn: 2
-  elapsedTime: 0
+  zombie: {fileID: 3690017881676672855, guid: 8e3a5f80872b44a08986d1ef4bf0b192, type: 3}

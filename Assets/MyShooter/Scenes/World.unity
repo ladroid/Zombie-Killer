@@ -239,13 +239,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Revolver
       objectReference: {fileID: 0}
+    - target: {fileID: 4107726727391446, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.17855828
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107726727391446, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2680547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4107726727391446, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5894099
+      objectReference: {fileID: 0}
     - target: {fileID: 4977564265705686, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.54
+      value: 0.5400001
       objectReference: {fileID: 0}
     - target: {fileID: 4977564265705686, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.49
+      value: -0.4900003
       objectReference: {fileID: 0}
     - target: {fileID: 4977564265705686, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -253,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4977564265705686, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4977564265705686, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
       propertyPath: m_LocalRotation.y
@@ -261,7 +273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4977564265705686, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4977564265705686, guid: b12227c752b72334b9c3d0f15986f1c2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -634,8 +646,13 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1604340010224622, guid: 17a44cf2e19b14f45b11237f3c2b3bdc,
     type: 3}
   speed: 1000
-  lifeDuration: 2
   fireRate: 2
+--- !u!4 &2123290400 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2250786039231599451, guid: 90586e39201d4489eb627a3a74a8a704,
+    type: 3}
+  m_PrefabInstance: {fileID: 2250786039322903621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2125678054
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77d2a8d5b26704d5ab50d8995fcc066c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plane: {fileID: 385924542623208424, guid: 3bbdd21cb370a45b3b2698266aefd98d, type: 3}
+  target: {fileID: 2123290400}
   zombie: {fileID: 3690017881676672855, guid: 8e3a5f80872b44a08986d1ef4bf0b192, type: 3}
 --- !u!4 &2125678056
 Transform:
@@ -722,6 +739,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2250786039231599449, guid: 90586e39201d4489eb627a3a74a8a704,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2250786039231599450, guid: 90586e39201d4489eb627a3a74a8a704,
         type: 3}
