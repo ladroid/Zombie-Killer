@@ -8,18 +8,10 @@ public class ZombieSpawning : MonoBehaviour
     public GameObject zombie;
     float Timer;
 
-    //static int numZombies = 10;
-    //static GameObject[] zombies;
-
     // Start is called before the first frame update
     void Start()
     {
-        //zombies = new GameObject[numZombies];
-        //for (int i = 0; i < numZombies; i++)
-        //{
-        //    zombies[i] = (GameObject)Instantiate(zombie, Vector3.zero, Quaternion.identity);
-        //    zombies[i].SetActive(false);
-        //}
+
     }
 
     private void Awake()
@@ -27,35 +19,20 @@ public class ZombieSpawning : MonoBehaviour
         Timer = Time.time + 2;
     }
 
-    //static public GameObject getZombie()
-    //{
-    //    for (int i = 0; i < numZombies; i++)
-    //    {
-    //        if (!zombies[i].activeSelf)
-    //        {
-    //            return zombies[i];
-    //        }
-    //    }
-    //    return null;
-    //}
-
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = Vector3.zero;
+        Vector3 playerPos = target.transform.position;
+        Vector3 playerDirection = target.transform.forward;
+        Quaternion playerRotation = target.transform.rotation;
+        float spawnDistance = 10f;
 
-        pos.x = Random.Range(-target.transform.position.x / 2, target.transform.position.x / 2);
-        pos.z = Random.Range(-target.transform.position.z / 2, target.transform.position.z / 2);
-        //pos.y = pos.x > pos.z ? Random.Range(0, pos.z) : Random.Range(0, pos.x);
-        pos.y = 3;
-        if (Timer < Time.time)
+        Vector3 spawning = playerPos + playerDirection * spawnDistance;
+        if(Timer < Time.time)
         {
-            Debug.Log("TRANSFORM -> " + target.transform.position.x + " " + target.transform.position.z);
-            Debug.Log("RANDOM RANGE -> " + pos.x + " " + pos.y + " " + pos.z);
-            Vector3 spawnZombie = pos;
-            Instantiate(zombie, spawnZombie, Quaternion.identity);
+            Debug.Log("RANDOM RANGE -> " + spawning.x + " " + spawning.y + " " + spawning.z);
+            Instantiate(zombie, spawning, playerRotation);
             Timer = Time.time + 2;
         }
-
     }
 }
