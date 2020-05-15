@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Text meterLabel;
+
     public CharacterController controller;
     public float speed = 12f;
     public float gravity = -35f;
@@ -18,8 +21,12 @@ public class PlayerMovement : MonoBehaviour
 
     Animator anim;
 
+    float startTime;
+    float currentTime;
+
     void Start()
     {
+        startTime = Time.time;
         anim = GetComponent<Animator>();
     }
 
@@ -49,6 +56,13 @@ public class PlayerMovement : MonoBehaviour
 
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+
+        if (x != 0 || z != 0)
+        {
+            currentTime = Time.time;
+            int meters = Mathf.RoundToInt((currentTime - startTime) * speed);
+            meterLabel.text = meters.ToString() + "m";
+        }
 
         Vector3 move = transform.right * x + transform.forward * z;
 
