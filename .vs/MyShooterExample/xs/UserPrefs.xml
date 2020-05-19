@@ -6,7 +6,7 @@
       <File FileName="Assets/MyShooter/Scripts/TreePool.cs" />
       <File FileName="Assets/MyShooter/Scripts/GenerateInfinite.cs" />
       <File FileName="Assets/MyShooter/Scripts/MouseLook.cs" />
-      <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" Line="39" Column="45" />
+      <File FileName="Assets/MyShooter/Scripts/PlayerMovement.cs" Line="58" Column="35" />
       <File FileName="Assets/MyShooter/Scripts/PlayerShoot.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -27,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="816da891-9625-43f1-a2e1-d033b10be73e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="77fcf8bd-5b82-45df-8cd8-2cba33feae09" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
